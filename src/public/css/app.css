@@ -1,0 +1,134 @@
+.info-panel {
+  color: #fff;
+  font-size: 1.25em;
+  margin-top: 1em;
+}
+
+.game-wrapper {
+  color: #fff;
+  width: 600px;
+  height: 600px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel {
+  width: 100%;
+}
+
+.game-wrapper > .score-panel {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-wrapper > .score-panel > .expand {
+  flex: 1;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.game-wrapper > .score-panel > .score-box {
+  width: 80px;
+  height: 80px;
+  font-weight: 900;
+  font-size: 300%;
+  background: #4C6EB7;
+}
+
+.game-wrapper > .score-panel > .score-box:first-child {
+  border-top: 0.1em solid #5F94C5;
+}
+
+.game-wrapper > .score-panel > .score-box:last-child {
+  border-top: 0.1em solid #CC9C17;
+}
+
+.game-wrapper > .score-panel > .boost-box {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0em 1em;
+}
+
+.game-wrapper > .score-panel > .boost-box div {
+  margin: 0 0.15em;
+} 
+
+.game-wrapper > .score-panel > .boost-box > .boost {
+  background-color: grey;
+}
+
+#playerOneBoosts .boost.active {
+  background-color: #5F94C5;
+}
+
+#playerTwoBoosts .boost.active {
+  background-color: #CC9C17;
+}
+
+.game-wrapper .score-panel .boost-box .boost {
+  height: 20px;
+  width: 20px;
+  margin-right: 0.5em;
+}
+
+.game-wrapper > .canvas-container {
+  flex: 1;
+}
+
+.game-wrapper > .canvas-container > canvas {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #1B2828;
+  background-color: #000808;
+}
+
+.game-wrapper > .message-panel {
+  height: 54px;
+  background: #225C84;
+}
+
+.game-wrapper > .message-panel > .message-container {
+  width: 60%;
+  height: 40px;
+  background: #326C94;
+  font-weight: 600;
+  font-size: 110%;
+  letter-spacing: 1px;
+}
+
+.leaderboard-outer,
+.leaderboard-inner {
+  width: 90%;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Nunito', sans-serif;
+  color: #fff;
+}
+
+.leaderboard-outer {
+  max-width: 900px;
+  background-color: #2A76B5;
+}
+
+.leaderboard-inner {
+  max-width: 700px;
+  background-color: #3A86C5;
+}
+
+.leaderboard-inner h2 {
+  font-size: 3.5em;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

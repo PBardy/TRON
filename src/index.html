@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRON</title>
+  <link rel="stylesheet" type="text/css" href="public/css/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="public/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="public/css/media.css" />
+  <link rel="stylesheet" type="text/css" href="public/css/app.css" />
+  <script src="public/js/app.js" type="module" defer></script>
+  <script>
+    const _location = window.location.href;
+    const parts = _location.split('#');
+    if(parts.length > 1) {
+      window.location.href = parts[0];
+    } 
+  </script>
+</head>
+<body>
+  <div class="app">
+    <div class="page" id="home">
+      <div class="content">
+        <div class="game-wrapper">
+          <div class="score-panel panel">
+            <div class="score-box center" id="playerOneLives">3</div>
+            <div class="boost-box center" id="playerOneBoosts">
+              <div>Boosts</div>
+              <div class="boost active"></div>
+              <div class="boost active"></div>
+              <div class="boost active"></div>
+            </div>
+            <div class="expand center">
+              <span class="center" id="timer">0:00</span>
+            </div>
+            <div class="boost-box center" id="playerTwoBoosts">
+              <div class="boost active"></div>
+              <div class="boost active"></div>
+              <div class="boost active"></div>
+              <div>Boosts</div>
+            </div>
+            <div class="score-box center" id="playerTwoLives">3</div>
+          </div>
+          <div class="canvas-container"></div>
+          <div class="message-panel panel center">
+            <div class="message-container center">Press Space To Begin</div>
+          </div>
+        </div>
+        <div class="info-panel panel center">Information: Each player has three lives. Last standing wins.</div>
+        <div class="info-panel panel center">Controls - Movement: WASD - Boost: Q</div>
+      </div>
+    </div>
+    <div class="page" id="leaderboard">
+      <div class="leaderboard-outer">
+        <div class="leaderboard-inner">
+          <h2>Leaderboard</h2>
+          <h3>Comming Soon...</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
